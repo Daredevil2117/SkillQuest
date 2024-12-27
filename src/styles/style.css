@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(250, 244, 244);
+}
+
+.header-section {
+    height: 100px;
+}
+
+.mid-section {
+    height: calc(100vh - 200px);
+    background-image: url("../../assets/images/main-image.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 10px;
+
+}
+
+.footer-section {
+    height: 100px;
+}
+
+.nav-title {
+    color: #252579;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.nav-heading {
+    font-weight: 600;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 350px;
+    animation: typewriter 2s steps(13),
+        blink 800ms steps(13) normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+.button-bottom-01 {
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  }
+  
+  .button-bottom-01:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
+  .button-bottom-01:hover {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
+
+.nav-message {
+    color: #665959;
+    font-size: 16px;
+}
+
+
+/* General Purpose Classes  */
+
+.df {
+    display: flex;
+}
+
+.jc_sb {
+    justify-content: space-between;
+}
+
+.pd10 {
+    padding: 10px;
+}
+
+.ai_c {
+    align-items: center;
+}
+
+.h100p {
+    height: 100%;
+}
+
+.pd0_10 {
+    padding: 0 10px;
+}
+.jc_c{
+    justify-content: center;
+}
+.fff{
+    color: white;
+}
+.cp{
+    cursor: pointer;
+}
