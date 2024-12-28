@@ -7,7 +7,7 @@ body {
 }
 
 .mid-section {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
     background-image: url("../../assets/images/main-image.jpg");
     background-size: cover;
     background-position: center center;
@@ -79,6 +79,20 @@ body {
     font-size: 16px;
 }
 
+.header-navbar {
+    gap: 20%;
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    background-color: #405cf5;
+}
+
+.outline {
+    width: 20%;
+    overflow-y: auto;
+    height : calc(100vh - 120px)
+}
+
 
 /* General Purpose Classes  */
 
@@ -113,4 +127,8 @@ body {
 }
 .cp{
     cursor: pointer;
+}
+
+.m10{
+    margin:10px;
 }
