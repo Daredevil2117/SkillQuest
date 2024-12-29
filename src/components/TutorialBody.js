@@ -5,6 +5,7 @@ import ArticlePanel from "./ArticlePanel";
 
 function TutorialBody() {
   const [currentArticle, setCurrentArticle] = useState(tutorialsData[0]);
+  const [toggleLeftPanel, setToggleLeftPanel] = useState(false)
   return (
     <div className="df">
       <div  className="outline">
