@@ -37,6 +37,10 @@ body {
         blink 800ms steps(13) normal;
 }
 
+.outline{
+    background-color: #f3eeee;
+}
+
 @keyframes typewriter {
     from {
         width: 0%;
@@ -84,7 +88,7 @@ body {
     display: flex;
     padding: 10px;
     color: #fff;
-    background-color: #405cf5;
+    background-color: #00246B;;
 }
 
 .outline {
