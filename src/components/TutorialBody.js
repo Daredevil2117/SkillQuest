@@ -8,14 +8,14 @@ function TutorialBody(props) {
   const [currentArticle, setCurrentArticle] = useState(tutorialsData[0]);
   return (
     <>
-    <div style={{ display: "flex", height: "100vh", position: "relative" }}>
+    <div style={{ display: "flex", position: "relative" }}>
       <div
         style={{
           flex: props.showOutline ? "1" : "0",
           transition: "flex 0.3s ease, opacity 0.3s ease",
           opacity: props.showOutline ? 1 : 0,
           borderRight: props.showOutline ? "1px solid #ddd" : "none",
-          overflow: "hidden",
+          overflow: "auto",
         }}
       >
         {props.showOutline && <OutlinePanel
