@@ -6,6 +6,7 @@ import CodeEditor from "./CodeEditor";
 
 function TutorialBody(props) {
   const [currentArticle, setCurrentArticle] = useState(tutorialsData[0]);
+  const [currentArticleId, setCurrentArticleId] = useState(1)
   return (
     <>
     <div style={{ display: "flex", position: "relative" }}>
@@ -21,6 +22,7 @@ function TutorialBody(props) {
         {props.showOutline && <OutlinePanel
           tutorials={tutorialsData}
           onSelectArticle={setCurrentArticle}
+          setCurrentArticleId={setCurrentArticleId}
         />}
       </div>
       <div
@@ -31,7 +33,7 @@ function TutorialBody(props) {
           transition: "flex 0.3s ease",
         }}
       >
-         <ArticlePanel article={currentArticle} />
+         <ArticlePanel article={currentArticle} currentArticleId={currentArticleId} />
       </div>
       <div
         style={{

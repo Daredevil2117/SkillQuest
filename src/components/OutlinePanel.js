@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function OutlinePanel({tutorials, onSelectArticle}) {
+function OutlinePanel({tutorials, onSelectArticle,setCurrentArticleId}) {
   const [selected, setSelected] = useState(null);
   return (
     <div className="panel" style={{position:"relative"}}>
@@ -12,7 +12,7 @@ function OutlinePanel({tutorials, onSelectArticle}) {
         {tutorials.map((item,index) => (
           <div
             key={item.id}
-            onClick={() => {onSelectArticle(item);setSelected(index)}}
+            onClick={() => {onSelectArticle(item);setSelected(index);setCurrentArticleId(item.id)}}
             className="outline-item cp"
             style={{
               padding:"3px 14px",

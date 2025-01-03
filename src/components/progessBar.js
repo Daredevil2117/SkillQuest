@@ -1,11 +1,11 @@
 import React from 'react'
 
-function progessBar() {
+function ProgessBar() {
   return (
     <div>
-      
+        Hello World
     </div>
   )
 }
 
-export default progessBar
+export default ProgessBar
