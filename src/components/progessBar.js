@@ -15,6 +15,9 @@ function ProgessBar() {
           <li>
             Quizz
           </li>
+          <li>
+            Straek
+          </li>
         </ul>
       </div>
       <div>
