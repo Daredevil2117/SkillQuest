@@ -2,9 +2,27 @@ import React from 'react'
 
 function ProgessBar() {
   return (
-    <div>
-        Hello World
+    <>
+    <div className='header-navbar'>
+        Progess
     </div>
+    <div className='df'>
+      <div>
+        <ul>
+          <li>
+            Articles
+          </li>
+          <li>
+            Quizz
+          </li>
+        </ul>
+      </div>
+      <div>
+        Display Of Graphs
+      </div>
+    </div>
+    </>
+    
   )
 }
 
