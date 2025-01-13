@@ -2,9 +2,14 @@ import React from 'react'
 
 function Quizz() {
   return (
+    <>
     <div>
-      Hello World !!
+      Take Quizz!!
     </div>
+    <div>
+        Js or ReactJs
+    </div>
+    </>
   )
 }
 
